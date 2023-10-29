@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <img id="logo" src="assets/logo-qr-generator.svg" alt="">
   <main>
-    <img src="assets/logo-qr-generator.svg" alt="">
     <form action="">
       <fieldset>
         <input id="url" type="text" placeholder="Enter a url">
@@ -16,9 +16,9 @@
       </fieldset>
     </form>
     <div id="qrcode"></div>
-    <div class="actions">
-      <button>Download</button>
-      <button>Share</button>
+    <div id="actions" class="actions hidden">
+      <button id="download">Download</button>
+      <button id="share">Share</button>
     </div>
   </main>
   <script src="main.js"></script>

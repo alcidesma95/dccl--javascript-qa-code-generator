@@ -1,0 +1,115 @@
+@font-face {
+  font-family: outfit;
+  src: url('assets/font/outfit.ttf');
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: outfit;
+}
+
+
+.error{
+  color: #845EEE;
+  font-size: 10px;
+}
+.active{
+  display: flex;
+}
+
+.hidden{
+  display: none;
+}
+
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #111729;
+  background-image: url('assets/bg-illustration.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center right;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  max-width: 550px;
+  width: 100%;
+  
+}
+.logo{
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+form{
+  width: 100%;
+}
+
+fieldset{
+  all: unset;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  border-radius: 15px;
+  border: 2px solid #3662E3;
+  background: #030617;
+  width: 100%;
+}
+
+input, button {
+  all: unset;
+}
+input{
+  padding: 15px 20px;
+  color: #202839;
+}
+
+input::placeholder{
+  color: #202839;
+}
+
+button{
+  background-color: #3662E3;
+  padding: 15px 20px;
+  min-width: 70px;
+  text-align: center;
+  border-radius: 15px;
+  color:white
+}
+
+.actions{
+  display: flex;
+  gap:20px;
+}
+
+#qrcode{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: #1E2C51;
+  border-radius: 50%;
+  padding: 25px;
+  width: 50%;
+  height: max-content;
+}
+
+#qrcode> img{
+  background-color: white;
+  padding: 30px;
+  width: 100%;
+  border-radius: 15px;
+}
