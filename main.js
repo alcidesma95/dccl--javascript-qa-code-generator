@@ -25,7 +25,12 @@ function createQR() {
     }
     const container = document.getElementById("qrcode")
     if(!generated)
-    new QRCode(container, url);
+    new QRCode(container, {
+      text: url,
+      colorDark : "#111729",
+      colorLight : "#ffffff",
+      correctLevel : QRCode.CorrectLevel.H
+    });
     container.querySelector('img').setAttribute('id', 'qr_image')
     form.style.display='none'
     const logo = document.getElementById('logo')
